@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Sudan Service Expo",
+    "slug": "sudan-service-expo",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "sdkVersion": "48.0.0",
+    "android": {
+      "package": "com.sudanservice.app",
+      "versionCode": 1
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ad4ac316-f821-42b8-9962-f774afb477ad"
+      }
+    }
+  }
+}
