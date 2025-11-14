@@ -1,0 +1,21 @@
+workflows:
+  expo-android:
+    name: Expo Android Build
+    environment:
+      node: 18
+      yarn: true
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install --legacy-peer-deps
+
+      - name: Install EAS CLI
+        script: |
+          npm install -g eas-cli
+
+      - name: Build Android app using EAS
+        script: |
+          npx eas build --platform android --local --output ./app-release.apk
+
+    artifacts:
+      - app-release.apk
